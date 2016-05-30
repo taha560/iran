@@ -212,6 +212,7 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
+    	"supergroup"
 	"admin",
     "onservice",
     "inrealm",
@@ -472,145 +473,125 @@ will return group ban list
 
 ]],
 	help_text_super =[[
-SuperGroup Commands:
-
+              help:
 !info
-Displays general info about the SuperGroup
-
+اطلاعاتی درباره فرد
+----------------
 !admins
-Returns SuperGroup admins list
-
+اضافه کردن ادمین
+----------------
 !owner
-Returns group owner
-
+اضافه کردن مدیر اصلی گروه
+----------------
 !modlist
-Returns Moderators list
-
+لیست مدیران فرعی گروه
+----------------
 !bots
-Lists bots in SuperGroup
-
+لیست ربات های گروه
+----------------
 !who
-Lists all users in SuperGroup
-
+لیست افراد گروه 
+----------------
 !block
-Kicks a user from SuperGroup
-*Adds user to blocked list*
-
+بلاک کردن از گروه
+----------------
 !ban
-Bans user from the SuperGroup
-
+بن شد ن افراد
+----------------
 !unban
-Unbans user from the SuperGroup
-
+آن بن شدن فرد
+----------------
 !id
-Return SuperGroup ID or user id
-*For userID's: !id @username or reply !id*
-
+ایدی گروه
+----------------
 !id from
-Get ID of user message is forwarded from
-
+آیدی 
+----------------
 !kickme
-Kicks user from SuperGroup
-*Must be unblocked by owner or use join by pm to return*
-
+حذف کردن خود در گروه
+----------------
 !setowner
-Sets the SuperGroup owner
-
+تنظیم مدیر اصلی گروه
+----------------
 !promote [username|id]
-Promote a SuperGroup moderator
-
+تنظیم مدیر فرعی گروه با آیدی
+----------------
 !demote [username|id]
-Demote a SuperGroup moderator
-
+حذف مدیر فرعی گروه
+----------------
 !setname
-Sets the chat name
-
+تنظیم اسم گروه
+----------------
 !setphoto
-Sets the chat photo
-
+تنظیم عکس گروه
+----------------
 !setrules
-Sets the chat rules
-
+تنظیم راهنمایی گروه
+----------------
 !setabout
-Sets the about section in chat info(members list)
-
+تنظیم درباره ی گزوه
+----------------
 !save [value] <text>
-Sets extra info for chat
-
+سیو کردن
+----------------
 !get [value]
 Retrieves extra info for chat by value
-
+----------------
 !newlink
-Generates a new group link
-
+لینک جدید
+----------------
 !link
-Retireives the group link
-
+دریافت لینک
+----------------
 !rules
-Retrieves the chat rules
-
+راهنمای چت
+----------------
 !lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Lock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: enable strict settings enforcement (violating user will be kicked)*
-
+قفل لینک/اسپم/عربی/ممبر/استیکر/کانتکست
+----------------
 !unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Unlock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: disable strict settings enforcement (violating user will not be kicked)*
-
+باز کردن 
+----------------
 !mute [all|audio|gifs|photo|video|service]
-mute group message types
-*A "muted" message type is auto-deleted if posted
-
+بی صدا کردن گروه
+----------------
 !unmute [all|audio|gifs|photo|video|service]
-Unmute group message types
-*A "unmuted" message type is not auto-deleted if posted
-
+در اوردن از بی صدای گروه
+----------------
 !setflood [value]
-Set [value] as flood sensitivity
-
+تنظیم حساسیت اسپم
+----------------
 !settings
-Returns chat settings
-
+تنظیمات گروه
+----------------
 !muteslist
-Returns mutes for chat
-
+گرداند موارد نادیده گرفته شده برای چت
+----------------
 !muteuser [username]
-Mute a user in chat
-*If a muted user posts a message, the message is deleted automaically
-*only owners can mute | mods and owners can unmute
-
+در اوردن یوزر نیم
+----------------
 !mutelist
-Returns list of muted users in chat
-
+دیده لیست موت شدگان
+----------------
 !banlist
-Returns SuperGroup ban list
-
+لیست بن شدگان 
+----------------
 !clean [rules|about|modlist|mutelist]
-
+...پاک کردن راهنمایی و
+----------------
 !del
-Deletes a message by reply
-
+پاک کردن پیام با ریپلی
+----------------
 !public [yes|no]
-Set chat visibility in pm !chats or !chatlist commands
-
+----------------
 !res [username]
-Returns users name and id by username
-
-
+در اوردن ایدی عددی
+----------------
 !log
-Returns group logs
-*Search for kick reasons using [#RTL|#spam|#lockmember]
-
+----------------
 **You can use "#", "!", or "/" to begin all commands
+              گروه سی طرح  
 
-*Only owner can add members to SuperGroup
-(use invite link to invite)
-
-*Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
-
-*Only owner can use res, setowner, promote, demote, and log commands
 
 ]],
   }
