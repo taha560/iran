@@ -213,6 +213,7 @@ function create_config( )
   config = {
     enabled_plugins = {
     	"supergroup"
+    	"Run"
 	"admin",
     "onservice",
     "inrealm",
@@ -587,7 +588,8 @@ Retrieves extra info for chat by value
 !res [username]
 در اوردن ایدی عددی
 ----------------
-!log
+!run
+بالا بردن سرعت ربات
 ----------------
 **You can use "#", "!", or "/" to begin all commands
               گروه سی طرح  
